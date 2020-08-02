@@ -21,8 +21,8 @@ $('.jobs-slider').slick({
 	slidesToShow:3,
 	slidesToScroll:2,
 	infinite:true,
-	prevArrow:'<span class="prev"><img class="img-fluid" src="../images/icons/pre-arrow.png"/></span>',
-	nextArrow:'<span class="next"><img class="img-fluid" src="../images/icons/next-arrow.png"/></span>',
+	prevArrow:'<span class="prev"><img class="img-fluid" src="./images/icons/pre-arrow.png"/></span>',
+	nextArrow:'<span class="next"><img class="img-fluid" src="./images/icons/next-arrow.png"/></span>',
 	responsive:[
 		{
 			breakpoint:1300,
@@ -60,6 +60,58 @@ $('.jobs-slider').slick({
 			}
 		}
 	]
+});
+
+$(".area-page-sllider").slick({
+  dots: false,
+  arrows: true,
+  speed: 300,
+  autoplay: false,
+  autoplaySpeed: 3000,
+  slidesToShow: 3,
+  slidesToScroll: 2,
+  infinite: true,
+  prevArrow:
+    '<span class="prev"><img class="img-fluid" src="../images/icons/pre-arrow.png"/></span>',
+  nextArrow:
+    '<span class="next"><img class="img-fluid" src="../images/icons/next-arrow.png"/></span>',
+  responsive: [
+    {
+      breakpoint: 1300,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 1025,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 556,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
 });
 
     $('.add_service_slick').slick({
