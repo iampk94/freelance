@@ -11,6 +11,15 @@ $(window).scroll(function () {
   }
 });
 
+$('.menu-link').bigSlide({
+  menu:"#menu",
+  push:".push",
+  side:"left",
+  easyClose:!0,
+  menuWidth:"19.625em",
+  speed:"300"
+});
+
 
 $(".rocket-lazyload").each(function () {
   if ($(this).attr("data-bg")) {
