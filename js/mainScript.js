@@ -1,13 +1,15 @@
 $(window).scroll(function () {
-  console.log("scrolling");
-  var sticky = $(".navbar"),
-    scroll = $(window).scrollTop();
-  console.log("scrolling", scroll);
+  var sticky = $(".navbar");
+  var mobileSticky = $(".mobile-header");
+  scroll = $(window).scrollTop();
+
 
   if (scroll >= 90) {
     sticky.addClass("fixed-top");
+    mobileSticky.addClass("fixed-top");
   } else {
     sticky.removeClass("fixed-top");
+    mobileSticky.removeClass("fixed-top");
   }
 });
 
