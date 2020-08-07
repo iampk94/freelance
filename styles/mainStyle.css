@@ -5671,16 +5671,19 @@ body{
     line-height:1.2;
     text-align:left;
     font-weight:700;
-    width:90%
+}
+.happy-welcome h5{
+    color: #000;
+    font-weight: 700;
+    font-size: 23px;
 }
 .happy-welcome p{
-    color:#272626;
+    color:#666;
     font-size:16px;
     font-family:"Poppins",Cursive;
     line-height:2.125;
     text-align:left;
     padding-bottom:0;
-    width:80%
 }
 .happy-welcome .fact{
     display:-webkit-box;
