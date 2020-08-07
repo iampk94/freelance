@@ -117,63 +117,53 @@
         <div class="happy-contact">
             <div class="container">
                 <div class="text-center">
-                    <img src="../images/contact/icons/contact.png" class="img-fluid">
-                    <h1 class="main-heading">GET IN TOUCH</h1>
+                    <img src="../images/icons/quote.png" class="img-fluid">
+                    <h1 class="main-heading">GET A QUOTE</h1>
                     <div class="line"></div>
                     <p class="text">Tell us about your move...</p>
                 </div>
                 <div class="row">
                     <div class="gf_browser_gecko gform_wrapper" id="gform_wrapper_2">
-                        <form method="post" enctype="multipart/form-data" id="gform_2" action="/contact-us/">
-                            <div class="gform_heading">
-                                <span class="gform_description"></span>
-                            </div>
+                        <form>
                             <div class="gform_body">
-                                <ul id="gform_fields_2"
-                                    class="gform_fields top_label form_sublabel_below description_below">
-                                    <li class="gfmc-column gfmc-row-1-column gfmc-row-1-col-1-of-1"
-                                        style="width: 100%;">
+                                <ul class="gform_fields top_label form_sublabel_below description_below">
+                                    <li class="gfmc-column gfmc-row-1-column gfmc-row-1-col-1-of-1" style="width: 100%;">
                                         <ul>
-                                            <li id="field_2_12"
+                                            <li
                                                 class="gfield field_sublabel_below field_description_below hidden_label gfield_visibility_visible">
-                                                <label class="gfield_label" for="input_2_12"></label>
                                                 <div class="ginput_container ginput_container_text">
-                                                    <input name="input_12" id="input_2_12" type="text" value=""
-                                                        class="medium" placeholder="Name" aria-invalid="false">
+                                                    <input name="username" type="text" value="" class="medium" placeholder="Name" required>
                                                 </div>
                                             </li>
-                                            <li id="field_2_2"
+                                            <li
                                                 class="gfield field_sublabel_below field_description_below hidden_label gfield_visibility_visible">
-                                                <label class="gfield_label" for="input_2_2">Email</label>
                                                 <div class="ginput_container ginput_container_email">
-                                                    <input name="input_2" id="input_2_2" type="text" value=""
-                                                        class="medium" placeholder="Email" aria-invalid="false">
+                                                    <input name="usermail" type="email" value="" class="medium" placeholder="Email" required>
                                                 </div>
                                             </li>
-                                            <li id="field_2_4"
+                                            <li
                                                 class="gfield field_sublabel_below field_description_below hidden_label gfield_visibility_visible">
-                                                <label class="gfield_label" for="input_2_4"></label>
                                                 <div class="ginput_container ginput_container_text">
-                                                    <input name="input_4" id="input_2_4" type="text" value=""
-                                                        class="medium" placeholder="Phone" aria-invalid="false">
+                                                    <input name="userphone" type="tel" value="" class="medium" placeholder="Phone" required>
                                                 </div>
                                             </li>
                                         </ul>
                                     </li>
-                                    <li id="field_2_5"
-                                        class="gfield field_sublabel_below field_description_below hidden_label gfield_visibility_visible">
-                                        <label class="gfield_label" for="input_2_5"></label>
+                                    <li id="field_2_5" class="gfield field_sublabel_below field_description_below hidden_label gfield_visibility_visible">
                                         <div class="ginput_container ginput_container_textarea">
-                                            <textarea name="input_5" id="input_2_5" class="textarea medium"
-                                                placeholder="Message" aria-invalid="false" rows="10"
-                                                cols="50"></textarea>
+                                            <select name="option">
+                                                <option hidden>Type of Service Looking for</option>
+                                                <option value="house_move">House Move</option>
+                                                <option value="office_move">Office Move</option>
+                                                <option value="storage">Storage</option>
+                                                <option value="man_with_van">Man with a Van</option>
+                                            </select>
                                         </div>
                                     </li>
                                 </ul>
                             </div>
                             <div class="gform_footer top_label">
-                                <input type="submit" id="gform_submit_button_2" class="gform_button button"
-                                    value="Submit" tabindex="1">
+                                <input type="submit" class="gform_button button" value="Submit">
                             </div>
                         </form>
                     </div>
